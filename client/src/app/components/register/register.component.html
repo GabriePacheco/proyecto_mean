@@ -32,7 +32,7 @@
         <p>
             <label>E-mail</label>
             <input type="email" name="email" #email="ngModel" [(ngModel)]="user.email" class="formcontrol" required
-                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$" />
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
             <span *ngIf="!email.valid && email.touched"> E-mail no Válido!
             </span>
         </p>
