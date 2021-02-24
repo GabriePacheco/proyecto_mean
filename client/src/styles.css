@@ -1,0 +1,26 @@
+/*Generales*/
+.h1-strong{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom:15px;
+    border-bottom: 1px solid #eee;
+    }
+    .active{
+    background: #cc1717;
+    }
+    /*Cabecera*/
+    .navigation {
+    padding: 0px !important;
+    }
+    .navigation .navbar {
+    border-radius: 0px !important;
+    background: #e53c37 !important;
+    border: none;
+    }
+    .navigation .navbar *{
+    color: white !important;
+    }
+    .navigation .navbar a:hover{
+    background: #cc1717 !important;
+    }

@@ -1,0 +1,41 @@
+<div class="navigation col-lg-12">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">{{title}}</a>
+      </div>
+      <ul class="nav navbar-nav" *ngIf="identity">
+        <li>
+          <a [routerLink]="['/home']" [routerLinkActive]="['active']">
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/timeline']" [routerLinkActive]="['active']">
+            Timeline
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/gente']" [routerLinkActive]="['active']">
+
+            Gente
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar navbar-nav navbar-right" *ngIf="!identity">
+        <li>
+          <a [routerLink]="['/login']" [routerLinkActive]="['active']">
+            Login
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/registro']" [routerLinkActive]="['active']">
+            Registro
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<router-outlet></router-outlet>
